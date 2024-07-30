@@ -2,18 +2,18 @@
 
 #include "platform.h"
 
-static HCRYPTPROV s_provider;
-
-void random_init()
-{
-	CryptAcquireContext(&s_provider, NULL, NULL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT);
-}
-
 int random()
 {
+	static HCRYPTPROV provider;
+	
+	if (provider == NULL)
+	{
+		CryptAcquireContext(&provider, NULL, NULL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT);
+	}
+	
 	int value;
 
-	CryptGenRandom(s_provider, sizeof(int), &value);
+	CryptGenRandom(provider, sizeof(int), &value);
 
 	value &= RANDOM_MAX;
 

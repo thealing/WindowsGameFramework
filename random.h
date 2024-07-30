@@ -4,8 +4,6 @@
 
 #define RANDOM_MAX INT_MAX
 
-void random_init();
-
 int random();
 
 int random_below(int x);
