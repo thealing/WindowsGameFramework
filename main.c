@@ -10,8 +10,6 @@ int main()
 		
 		graphics_clear(&(Color){ 1, 0, 0, 1 });
 		
-		printf("%d\n",random());
-		
 		if (window_is_mouse_button_down())
 		{
 			graphics_set_color(&(Color){ 0, 1, 0, 1 });
