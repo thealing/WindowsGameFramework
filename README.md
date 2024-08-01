@@ -2,7 +2,7 @@
 
 This is a **C99 Windows** game framework with **Graphics, Sound, Mouse And Keyboard Input, Time, Random Generator** and a **Physics Engine**. For example, a game like [Hill Climb Racing](https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb&hl=en) can be written in it.
 
-An example in main.c along with a gcc build command have been added as a starting point.
+An example main.c along with a gcc build command are included as a starting point.
 
 # How To Use
 ## Window management
@@ -100,6 +100,7 @@ An example in main.c along with a gcc build command have been added as a startin
   - Stability achieved by the usage of correction velocities
 
 # About
+- No 3rd party libraries
 - Window management and input using Win32 API
 - Rendering is using OpenGL
 - Sound playback using MCI
