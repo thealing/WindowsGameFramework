@@ -5,10 +5,10 @@ This is a **C99 Windows** game framework with **Graphics, Sound, Mouse And Keybo
 An example main.c along with a gcc build command are included as a starting point.
 
 # How To Use
-## Window management
 - Call window_create() before using the graphics module or loading images
 - Before each game update, call window_update()
 - After each game render (using graphics_* functions), call window_display()
+# Features
 ## Graphics
 - Load PNG, JPG, BMP...
 - Set camera (viewport)
