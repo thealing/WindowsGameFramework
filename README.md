@@ -24,9 +24,9 @@ An example main.c along with a gcc build command are included as a starting poin
   - Polygon
   - Rectangle
 - Draw text
-  - Load any **Monospaced** font
+  - Load any installed font
       <ol type="1">
-        <li>Create a font sheet using ...</li>
+        <li>Create a font sheet using <a href="https://github.com/thealing/FontCreator">Font Creator</a></li>
         <li>Load a font sheet as a texture</li>
         <li>Set the font texture as the font</li>
       </ol>
