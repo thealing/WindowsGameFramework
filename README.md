@@ -2,7 +2,7 @@
 
 This is a **C99 Windows** game framework with **Graphics, Sound, Mouse And Keyboard Input, Time, Random Generator** and a **Physics Engine**. For example, a game like [Hill Climb Racing](https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb&hl=en) can be written in it.
 
-An example main.c along with a gcc build command are included as a starting point.
+An example main.c along with a gcc build command are included as a starting point. A game written using most of the engine features: [Fast Crash](https://github.com/thealing/FastCrash).
 
 # How To Use
 - Call window_create() before using the graphics module or loading images
