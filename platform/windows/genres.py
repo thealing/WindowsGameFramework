@@ -14,8 +14,10 @@ assets = []
 for root, dirs, files in os.walk(asset_dir):
 	for file in files:
 		full_path = os.path.join(root, file)
-		rel_path = os.path.relpath(full_path, asset_dir).replace(os.sep, "\\\\")
-		rc_path = os.path.relpath(full_path, output_dir).replace(os.sep, "\\\\")
+		rel_path = os.path.relpath(full_path, asset_dir)
+		rel_path = rel_path.replace(os.sep, "\\\\")
+		rc_path = os.path.relpath(full_path, output_dir)
+		rc_path = rc_path.replace(os.sep, "\\\\")
 		assets.append((rel_path, rc_path))
 
 with open(rc_file, "w") as rc:
