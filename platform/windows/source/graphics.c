@@ -24,7 +24,7 @@ Image* image_load(const char* path)
 
 	IWICImagingFactory* factory = NULL;
 
-	CoCreateInstance(&CLSID_WICImagingFactory, NULL, CLSCTX_INPROC_SERVER, &IID_IWICImagingFactory, &factory);
+	CoCreateInstance(&CLSID_WICImagingFactory1, NULL, CLSCTX_INPROC_SERVER, &IID_IWICImagingFactory, &factory);
 
 	IWICBitmapDecoder* decoder = NULL;
 
