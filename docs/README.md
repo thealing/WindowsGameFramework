@@ -109,4 +109,4 @@ A unified event-driven windowing system that abstracts away platform-specific li
 
 ## Demo Screenshots
 
-<img src="screen.png" />
+<img src="demo.png" />
